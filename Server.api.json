@@ -2886,7 +2886,13 @@
         },
         {
           "name": "IfChangedFromDataVersion",
-          "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
+          "description": "The version that currently exists according to the caller.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": true
@@ -2932,10 +2938,16 @@
         },
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         },
         {
           "name": "PlayFabId",
@@ -3325,7 +3337,13 @@
         },
         {
           "name": "IfChangedFromDataVersion",
-          "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
+          "description": "The version that currently exists according to the caller.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": true
@@ -3360,10 +3378,16 @@
         },
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         }
       ]
     },
@@ -3926,10 +3950,16 @@
         },
         {
           "name": "UserDataVersion",
-          "description": "The version of the UserData that was returned.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         },
         {
           "name": "UserInventory",
@@ -3952,10 +3982,16 @@
         },
         {
           "name": "UserReadOnlyDataVersion",
-          "description": "The version of the Read-Only UserData that was returned.",
+          "description": "Indicates the current version of the read-only data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         },
         {
           "name": "UserVirtualCurrency",
@@ -4640,7 +4676,13 @@
       "properties": [
         {
           "name": "IfChangedFromDataVersion",
-          "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
+          "description": "The version that currently exists according to the caller.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": true
@@ -4679,10 +4721,16 @@
         },
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         },
         {
           "name": "PlayFabId",
@@ -8432,10 +8480,16 @@
       "properties": [
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         }
       ]
     },
@@ -8529,10 +8583,16 @@
       "properties": [
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         }
       ]
     },
@@ -8704,10 +8764,16 @@
       "properties": [
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         }
       ]
     },
@@ -10169,9 +10235,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetCharacterDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/UpdateCharacterData",
@@ -10193,9 +10259,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetCharacterDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserInternalData",
         "Server/UpdateCharacterData",
@@ -10256,9 +10322,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetCharacterDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    },\r\n    \"CharacterId\": \"3945734562\"\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetCharacterData",
         "Server/GetCharacterInternalData",
@@ -10367,9 +10433,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetGuildDataRequest",
-      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -10383,9 +10449,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetGuildDataRequest",
-      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -10399,9 +10465,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetGuildDataRequest",
-      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 1\r\n}",
+      "requestExample": "{\r\n  \"GuildId\": \"ed526c2d3c36\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -10519,7 +10585,7 @@
       "request": "GetPlayerCombinedInfoRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"4027527BF22653D1\",\r\n  \"InfoRequestParameters\": {\r\n    \"GetUserAccountInfo\": true,\r\n    \"GetUserInventory\": false,\r\n    \"GetUserVirtualCurrency\": true,\r\n    \"GetUserData\": true,\r\n    \"UserDataKeys\": [\r\n      \"preferences\",\r\n      \"progress\"\r\n    ],\r\n    \"GetUserReadOnlyData\": false,\r\n    \"GetCharacterInventories\": false,\r\n    \"GetCharacterList\": false,\r\n    \"GetTitleData\": false,\r\n    \"GetPlayerStatistics\": false,\r\n    \"GetPlayerProfile\": false\r\n  }\r\n}",
       "result": "GetPlayerCombinedInfoResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"4027527BF22653D1\",\r\n    \"InfoResultPayload\": {\r\n      \"AccountInfo\": {\r\n        \"PlayFabId\": \"4027527BF22653D1\",\r\n        \"Created\": \"2013-04-07T09:04:28Z\",\r\n        \"Username\": \"my name\",\r\n        \"TitleInfo\": {\r\n          \"Origination\": \"IOS\",\r\n          \"Created\": \"2014-01-08T11:03:18Z\",\r\n          \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n          \"FirstLogin\": \"2014-01-08T11:03:18Z\"\r\n        },\r\n        \"FacebookInfo\": {\r\n          \"FacebookId\": \"23525445454\"\r\n        },\r\n        \"SteamInfo\": {\r\n          \"SteamCountry\": \"US\",\r\n          \"SteamCurrency\": \"USD\"\r\n        },\r\n        \"GameCenterInfo\": {\r\n          \"GameCenterId\": \"someone\"\r\n        }\r\n      },\r\n      \"UserVirtualCurrency\": {\r\n        \"GC\": 15\r\n      },\r\n      \"UserVirtualCurrencyRechargeTimes\": {\r\n        \"GC\": {\r\n          \"SecondsToRecharge\": 3600,\r\n          \"RechargeTime\": \"2014-01-01T12:00:00Z\",\r\n          \"RechargeMax\": 50\r\n        }\r\n      },\r\n      \"UserData\": {\r\n        \"preferences\": {\r\n          \"Value\": \"alpha\",\r\n          \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n          \"Permission\": \"Public\"\r\n        },\r\n        \"progress\": {\r\n          \"Value\": \"level_twenty\",\r\n          \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n          \"Permission\": \"Private\"\r\n        }\r\n      },\r\n      \"UserDataVersion\": 12,\r\n      \"UserReadOnlyDataVersion\": 0,\r\n      \"PlayerProfile\": {\r\n        \"TitleId\": \"TitleName\",\r\n        \"PlayerId\": \"10931252888739651331\",\r\n        \"Created\": \"0001-01-01T00:00:00Z\",\r\n        \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n        \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n        \"DisplayName\": \"PlayerDisplayName\",\r\n        \"TotalValueToDateInUSD\": 0\r\n      }\r\n    }\r\n  }\r\n}"
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"4027527BF22653D1\",\r\n    \"InfoResultPayload\": {\r\n      \"AccountInfo\": {\r\n        \"PlayFabId\": \"4027527BF22653D1\",\r\n        \"Created\": \"2013-04-07T09:04:28Z\",\r\n        \"Username\": \"my name\",\r\n        \"TitleInfo\": {\r\n          \"Origination\": \"IOS\",\r\n          \"Created\": \"2014-01-08T11:03:18Z\",\r\n          \"LastLogin\": \"2014-04-07T09:04:28Z\",\r\n          \"FirstLogin\": \"2014-01-08T11:03:18Z\"\r\n        },\r\n        \"FacebookInfo\": {\r\n          \"FacebookId\": \"23525445454\"\r\n        },\r\n        \"SteamInfo\": {\r\n          \"SteamCountry\": \"US\",\r\n          \"SteamCurrency\": \"USD\"\r\n        },\r\n        \"GameCenterInfo\": {\r\n          \"GameCenterId\": \"someone\"\r\n        }\r\n      },\r\n      \"UserVirtualCurrency\": {\r\n        \"GC\": 15\r\n      },\r\n      \"UserVirtualCurrencyRechargeTimes\": {\r\n        \"GC\": {\r\n          \"SecondsToRecharge\": 3600,\r\n          \"RechargeTime\": \"2014-01-01T12:00:00Z\",\r\n          \"RechargeMax\": 50\r\n        }\r\n      },\r\n      \"UserData\": {\r\n        \"preferences\": {\r\n          \"Value\": \"alpha\",\r\n          \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n          \"Permission\": \"Public\"\r\n        },\r\n        \"progress\": {\r\n          \"Value\": \"level_twenty\",\r\n          \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n          \"Permission\": \"Private\"\r\n        }\r\n      },\r\n      \"PlayerProfile\": {\r\n        \"TitleId\": \"TitleName\",\r\n        \"PlayerId\": \"10931252888739651331\",\r\n        \"Created\": \"0001-01-01T00:00:00Z\",\r\n        \"LastLogin\": \"0001-01-01T00:00:00Z\",\r\n        \"BannedUntil\": \"9999-12-31T23:59:59.999Z\",\r\n        \"DisplayName\": \"PlayerDisplayName\",\r\n        \"TotalValueToDateInUSD\": 0\r\n      }\r\n    }\r\n  }\r\n}"
     },
     {
       "name": "GetPlayerProfile",
@@ -10850,9 +10916,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserInternalData",
         "Server/GetUserReadOnlyData",
@@ -10871,9 +10937,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/GetUserReadOnlyData",
@@ -10909,9 +10975,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherInternalData",
         "Server/GetUserPublisherReadOnlyData",
@@ -10933,9 +10999,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherData",
         "Server/GetUserPublisherReadOnlyData",
@@ -10957,9 +11023,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherData",
         "Server/GetUserPublisherInternalData",
@@ -10981,9 +11047,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/GetUserInternalData",
@@ -11808,7 +11874,7 @@
       "request": "UpdateCharacterDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetCharacterData",
         "Server/UpdateCharacterInternalData",
@@ -11832,7 +11898,7 @@
       "request": "UpdateCharacterDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetCharacterInternalData",
         "Server/UpdateCharacterData",
@@ -11856,7 +11922,7 @@
       "request": "UpdateCharacterDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"CharacterId\": \"98342357\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateCharacterDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetCharacterData",
         "Server/GetCharacterInternalData",
@@ -11898,7 +11964,7 @@
       "request": "UpdateGuildDataRequest",
       "requestExample": "{\r\n  \"GuildId\": \"0fb1e9c99954\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -11914,7 +11980,7 @@
       "request": "UpdateGuildDataRequest",
       "requestExample": "{\r\n  \"GuildId\": \"0fb1e9c99954\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -11930,7 +11996,7 @@
       "request": "UpdateGuildDataRequest",
       "requestExample": "{\r\n  \"GuildId\": \"0fb1e9c99954\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateGuildDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 13\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "AllInclusiveFlags": [
         "Beta"
       ]
@@ -12022,7 +12088,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/GetUserInternalData",
@@ -12043,7 +12109,7 @@
       "request": "UpdateUserInternalDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  }\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/GetUserInternalData",
@@ -12082,7 +12148,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherData",
         "Server/GetUserPublisherInternalData",
@@ -12106,7 +12172,7 @@
       "request": "UpdateUserInternalDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  }\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherData",
         "Server/GetUserPublisherInternalData",
@@ -12130,7 +12196,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserPublisherData",
         "Server/GetUserPublisherInternalData",
@@ -12154,7 +12220,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Server/GetUserData",
         "Server/GetUserInternalData",

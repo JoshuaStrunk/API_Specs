@@ -4295,7 +4295,13 @@
       "properties": [
         {
           "name": "IfChangedFromDataVersion",
-          "description": "The version that currently exists according to the caller. The call will return the data for all of the keys if the version in the system is greater than this.",
+          "description": "The version that currently exists according to the caller.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
           "optional": true
@@ -4334,10 +4340,16 @@
         },
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         },
         {
           "name": "PlayFabId",
@@ -8072,10 +8084,16 @@
       "properties": [
         {
           "name": "DataVersion",
-          "description": "Indicates the current version of the data that has been set. This is incremented with every set call for that type of data (read-only, internal, etc). This version can be provided in Get calls to find updated data.",
+          "description": "Indicates the current version of the data that has been set.",
+          "deprecation": {
+            "ProposedAfter": "11/15/2017",
+            "DeprecatedAfter": "12/15/2017",
+            "ObsoleteAfter": "01/15/2017",
+            "ReplacedBy": null
+          },
           "jsontype": "Number",
           "actualtype": "uint32",
-          "optional": false
+          "optional": true
         }
       ]
     },
@@ -10064,9 +10082,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserInternalData",
         "Admin/GetUserReadOnlyData",
@@ -10085,9 +10103,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserData",
         "Admin/GetUserReadOnlyData",
@@ -10123,9 +10141,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherInternalData",
         "Admin/GetUserPublisherReadOnlyData",
@@ -10144,9 +10162,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherData",
         "Admin/GetUserPublisherReadOnlyData",
@@ -10165,9 +10183,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherData",
         "Admin/GetUserPublisherInternalData",
@@ -10186,9 +10204,9 @@
       "auth": "SecretKey",
       "method": "POST",
       "request": "GetUserDataRequest",
-      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ],\r\n  \"IfChangedFromDataVersion\": 13\r\n}",
+      "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Keys\": [\r\n    \"preferences\",\r\n    \"progress\"\r\n  ]\r\n}",
       "result": "GetUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"DataVersion\": 12,\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"PlayFabId\": \"2039475\",\r\n    \"Data\": {\r\n      \"preferences\": {\r\n        \"Value\": \"alpha\",\r\n        \"LastUpdated\": \"2014-08-20T12:30:45Z\",\r\n        \"Permission\": \"Public\"\r\n      },\r\n      \"progress\": {\r\n        \"Value\": \"level_twenty\",\r\n        \"LastUpdated\": \"2014-09-01T10:12:30Z\",\r\n        \"Permission\": \"Private\"\r\n      }\r\n    }\r\n  }\r\n}",
       "seeAlso": [
         "Admin/GetUserData",
         "Admin/GetUserInternalData",
@@ -10995,7 +11013,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserData",
         "Admin/GetUserInternalData",
@@ -11016,7 +11034,7 @@
       "request": "UpdateUserInternalDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  }\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserData",
         "Admin/GetUserInternalData",
@@ -11037,7 +11055,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherData",
         "Admin/GetUserPublisherInternalData",
@@ -11061,7 +11079,7 @@
       "request": "UpdateUserInternalDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  }\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherData",
         "Admin/GetUserPublisherInternalData",
@@ -11085,7 +11103,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserPublisherData",
         "Admin/GetUserPublisherInternalData",
@@ -11109,7 +11127,7 @@
       "request": "UpdateUserDataRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"2039475\",\r\n  \"Data\": {\r\n    \"Class\": \"Fighter\",\r\n    \"Gender\": \"Female\",\r\n    \"Icon\": \"Guard 3\",\r\n    \"Theme\": \"Colorful\"\r\n  },\r\n  \"Permission\": \"Public\"\r\n}",
       "result": "UpdateUserDataResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"DataVersion\": 8\r\n  }\r\n}",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {}\r\n}",
       "seeAlso": [
         "Admin/GetUserData",
         "Admin/GetUserInternalData",
