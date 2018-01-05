@@ -11150,7 +11150,10 @@
       "request": "ModifyItemUsesRequest",
       "requestExample": "{\r\n  \"PlayFabId\": \"20394883\",\r\n  \"ItemInstanceId\": \"94585729\",\r\n  \"UsesToAdd\": 1\r\n}",
       "result": "ModifyItemUsesResult",
-      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ItemInstanceId\": \"94585729\",\r\n    \"RemainingUses\": 0\r\n  }\r\n}"
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ItemInstanceId\": \"94585729\",\r\n    \"RemainingUses\": 0\r\n  }\r\n}",
+      "errors": [
+        "NoRemainingUses"
+      ]
     },
     {
       "name": "MoveItemToCharacterFromCharacter",
