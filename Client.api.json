@@ -15630,11 +15630,12 @@
         "Client/UnlinkXboxAccount"
       ],
       "errors": [
-        "InvalidTitleId",
-        "InvalidPublisherId",
         "AccountNotFound",
+        "InvalidPublisherId",
+        "InvalidTitleId",
         "InvalidXboxLiveToken",
-        "RequestViewConstraintParamsNotAllowed"
+        "RequestViewConstraintParamsNotAllowed",
+        "XboxXASSExchangeFailure"
       ]
     },
     {
@@ -16220,7 +16221,8 @@
         "Client/LoginWithAndroidDeviceID"
       ],
       "errors": [
-        "AccountNotLinked"
+        "AccountNotLinked",
+        "DeviceNotLinked"
       ]
     },
     {
